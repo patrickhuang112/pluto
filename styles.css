@@ -1,0 +1,395 @@
+/* GENERAL CSS */
+html,body
+{
+    
+    overflow-x: hidden; 
+}
+
+* {
+        font-family: "Helvetica Neue LT Pro";
+		margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+}
+img {
+border-radius: 10%;
+}
+/* background stuff */
+
+
+.b1{	
+	/*background-size: 100%;	*/
+	height: 770px;
+	max-width: 100%;
+	background-image: url(background3.jpg);
+	border-collapse: collapse;
+	background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-color: #999;
+	/*
+	image centering code from https://codepen.io/theiwaz/pen/vybjc
+	*/
+}
+.b2{
+	height: 700px;
+	background: linear-gradient(rgba(0, 0, 0, 1), rgba(207, 196, 219, 1));	
+	max-width: 100%;
+	/*
+	background-image: url(https://i.imgur.com/ZgvCmAU.jpg);
+	*/
+}
+.b3{
+	height: 1000px;
+	max-width: 100%;
+	background: linear-gradient(rgba(207, 196, 219, 1), rgba(135, 218, 252, 1));
+	/*
+	background-image: url(https://i.imgur.com/S7vIwoP.jpg);
+	background-position: 0% 60%;
+	*/
+}
+
+.b4{ 
+	/*
+	background-image: url(https://i.imgur.com/56Bea7V.jpg);
+	background-position: 0% 50%; 
+	*/
+	background: linear-gradient(rgba(135, 218, 252, 1), rgba(255, 234, 220, 1));
+	height: 1000px;
+	max-width: 100%;
+}
+.b5{
+	/*
+	background-image: url(https://i.imgur.com/F8M5DKS.jpg);
+	background-position: 90% 99%;
+	*/
+	background-color: #FFEADC;
+	height:700px;
+	max-width: 100%
+}
+
+
+/* body font  */
+
+
+#t1{
+	color: #FFEEEE;
+	font-size:30px;
+}
+#t2{
+	color: #FFEEEE;
+	font-size:50px;
+}
+#t3{
+	color: #222222;
+	font-size:50px;
+}
+
+/* menu stuff */
+
+.menu > a{
+	font-size: 20px;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	transition: all .2s ease-in; 
+	padding-right: 50px; 
+	padding-left: 50px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #FFEEEE;
+}
+a.m1{
+	flex: 1;
+	order: 1;
+	border-top-color:#4285F4;
+}
+a.m1:hover{
+	color: #FFFFFF;
+	background-color: #4285F4;
+	border-top-color:#4285F4;
+}
+a.m2{
+	flex: 1;
+	order: 2;
+	border-top-color:#EA4335;
+}
+a.m2:hover{
+	color: #FFFFFF;
+	background-color: #EA4335;
+	border-top-color:#EA4335;
+}
+
+a.m3{
+	flex: 1;
+	order: 3;
+	border-top-color:#FBBC05;
+}
+a.m3:hover{
+	color: #ffffff;
+	background-color: #FBBC05;
+	border-top-color:#FBBC05;
+}
+
+a.m4{
+	flex: 1;
+	order: 4;
+	border-top-color:#34A853;
+}
+a.m4:hover{
+	color: #ffffff;
+	background-color: #34A853;
+	border-top-color:#34A853;
+}
+
+a.m5{
+	flex: 1;
+	order: 5;
+	border-top-color:#EA4335;
+}
+a.m5:hover{
+	color: #ffffff;
+	background-color: #EA4335;
+	border-top-color:#EA4335;
+}
+/* menu code from codepens: https://codepen.io/iPawan/pen/vxqemK */
+
+
+/*---------------------------------------------------------------------------------------CSS FOR DESKTOP----------------------------------------------------------------------------*/
+
+
+
+@media(min-width: 768px){
+.menu {
+	position: relative;
+	top: 30px;
+	right: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	/* menu code from codepens: https://codepen.io/iPawan/pen/vxqemK */
+}
+
+.b1  > h1{
+color: #FFEEEE;
+font-size: 130px;
+position: relative;
+top: 280px;
+text-align: center;
+}
+
+
+ 
+#product {
+width: 73%;
+margin:auto;
+}
+#product h3{
+position: absolute;
+left: 55%;
+top: 125%
+}
+#product p{
+position: absolute;
+left: 55%;
+top: 140%;
+}
+#product img{
+position: absolute;
+left: 5%;
+top: 118%;
+transform: rotate(357deg);
+}
+
+
+
+
+
+#design {
+width: 73%;
+margin:auto;
+}
+#design h3{
+position: absolute;
+left: 20%;
+top: 220%;
+}
+#design p{
+position: absolute;
+left: 20%;
+top: 235%;
+}
+#design img{
+position: absolute;
+left: 50%;
+top: 215%;
+transform: rotate(3deg);
+}
+
+
+
+
+#team {
+width: 73%;
+margin:auto;
+}
+#team h3{
+text-align: center;
+top: 300%
+}
+#col1{
+position: relative;
+top: 100px;
+width: 25%;
+float: left;
+}
+#col1 p{
+text-align:center;
+}
+#col1 img{
+position: relative;
+left: 75%;
+bottom: 100px;
+}
+#col2{
+position: relative;
+top: 100px;
+width: 75%;
+float: right;
+}
+#col2 p{
+text-align:center;
+}
+#col2 img{
+position: relative;
+left: 65%;
+bottom: 100px;
+}
+
+
+
+
+#bottom{
+width: 73%;
+margin:auto;
+}
+#bottom h3{
+text-align: center;
+top: 300%
+}
+
+
+#update{
+position: relative;
+top: 20px;
+width: 30%;
+float: left;
+}
+#update p{
+text-align:center;
+font-size: 20px;
+}
+#gallery{
+position: relative;
+top: 20px;
+width: 35%;
+float: right;
+}
+#centering{
+text-align:center;
+}
+#gallery img{
+position: absolute;
+right: 0%;
+left: -30%;
+}
+
+
+}
+
+/*----------------------------------------------------------------------------------------CSS FOR MOBILE----------------------------------------------------------------------- */
+@media(max-width: 768px){
+#product {
+	width: 50%;
+	margin:auto;
+}
+#product h3{
+	position: absolute;
+	text-align: center;
+	top: 150%
+}
+#product p{
+	position: absolute;
+	text-align: center;
+	top: 160%
+}
+  
+  
+  
+  
+.menu {
+    display:flex;
+    flex-direction: column;
+    margin: 0px;
+	/* menu code from codepens: https://codepen.io/iPawan/pen/vxqemK */
+} 
+
+}
+
+
+/*
+#m1{
+font-size: 30px; 
+position: absolute;
+top: 5%;
+left: 17%;
+}
+#m2{
+font-size: 30px; 
+position: absolute;
+top: 5%;
+left: 33%;
+}
+#m3{
+font-size: 30px; 
+position: absolute;
+top: 5%;
+left: 47%;
+}
+#m4{
+font-size: 30px; 
+position: absolute;
+top: 5%;
+left: 59%;
+}
+#m5{
+font-size: 30px; 
+position: absolute;
+top: 5%;
+left: 76%;
+}
+*/
+/*
+#menubutton{
+position: fixed;
+left: 32px;
+top: 31px;
+
+}
+*/
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 26, 2018, 4:05:07 PM
+    Author     : Patrick
+*/
+
